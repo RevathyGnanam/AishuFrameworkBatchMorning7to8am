@@ -4,14 +4,12 @@ export class Homepage {
 
     private readonly page: Page;
     //Locators
-
     private readonly lnkMyAccount: Locator;
     private readonly lnkRegister: Locator;
     private readonly linkLogin: Locator;
     private readonly txtSearchbox: Locator;
     private readonly btnSearch: Locator;
     //Constructors
-
     constructor(page: Page) {
         this.page = page;
         this.lnkMyAccount = page.locator('span:has-text("My Account")');
